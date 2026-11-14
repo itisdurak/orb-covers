@@ -10,7 +10,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 
 const EDGE = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
-const URL = 'file:///C:/Users/artem/OneDrive/Desktop/generated-images/index.html';
+const URL = process.env.SHOT_URL || 'file:///C:/Users/artem/OneDrive/Desktop/generated-images/index.html';
 const PORT = 9333;
 const PROFILE = path.join(process.env.TEMP, 'orb-edge-cdp');
 
