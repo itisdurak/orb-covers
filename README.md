@@ -13,6 +13,7 @@ index.html            — страница-витрина
 styles.css            — оформление и макеты
 app.js                — лайтбокс, прогресс скролла, анимации
 images/               — 8 + 1 PNG (сгенерированы скриптом)
+images/thumbs/        — лёгкие JPEG-превью для галереи и списка файлов
 images/manifest.js    — размеры, палитры и сиды
 tools/generate.js     — генератор: сцены, свой PNG-энкодер на zlib
 tools/shot.js         — QA-скриншоты через Edge DevTools (не нужен для сайта)
