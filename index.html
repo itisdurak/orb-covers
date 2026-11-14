@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>orb.studio — картинки из кода и места, где они работают</title>
+  <meta name="description" content="Восемь изображений, сгенерированных скриптом, и макеты: hero-блок, соцсети, stories, аватар, OG-превью, баннер, карточка товара и шапка письма.">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-head" id="site-head">
+    <div class="wrap site-head__inner">
+      <a class="brand" href="#top" aria-label="orb.studio — на главную">
+        <img class="brand__mark" src="images/favicon.png" width="32" height="32" alt="">
+        <span class="brand__text">orb<span>.studio</span></span>
+        <span class="brand__tag">generated</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#cases">Сценарии</a>
+        <a href="#files">Файлы</a>
+        <a href="#how">Как сделано</a>
+      </nav>
+      <a class="btn btn--primary btn--head" href="generated-images.zip" download>
+        <span>Скачать ZIP</span>
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 13h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow"><span class="eyebrow__dot"></span> Генеративная графика · 8 сценариев</p>
+        <h1 class="hero__title">Картинки, которые<br><span class="grad">придумал код</span></h1>
+        <div class="hero__row">
+          <p class="hero__lead">Восемь обложек, сгенерированных скриптом: без стоков, фотошопа и внешних сервисов. Ниже — макеты, которые показывают, где каждая из них работает.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#cases">Смотреть сценарии</a>
+            <a class="btn btn--ghost" href="generated-images.zip" download>Скачать 9 PNG · 9,4 МБ</a>
+          </div>
+        </div>
+        <ul class="stats">
+          <li><b>8</b><span>сгенерированных картинок</span></li>
+          <li><b>9,4 МБ</b><span>весит весь набор</span></li>
+          <li><b>0</b><span>внешних ассетов и npm</span></li>
+          <li><b>100%</b><span>нарисовано кодом</span></li>
+        </ul>
+      </div>
+
+      <div class="gallery" aria-label="Превью всех изображений">
+        <div class="gallery__head wrap">
+          <span class="mono-label">images / 8 файлов</span>
+          <span class="gallery__hint">наведите, чтобы остановить</span>
+        </div>
+        <div class="marquee">
+          <div class="marquee__track" id="marquee-track">
+            <a class="tile" href="#case-hero">
+              <span class="tile__img"><img src="images/hero-aurora.png" alt="Hero-обложка: сине-фиолетовая абстракция" loading="eager"></span>
+              <span class="tile__cap"><b>hero-aurora</b><em>1600 × 900</em></span>
+            </a>
+            <a class="tile" href="#case-post">
+              <span class="tile__img"><img src="images/post-pulse.png" alt="Пост: коралловая сфера" loading="eager"></span>
+              <span class="tile__cap"><b>post-pulse</b><em>1080 × 1080</em></span>
+            </a>
+            <a class="tile" href="#case-story">
+              <span class="tile__img"><img src="images/story-lime.png" alt="Stories: лаймовый градиент" loading="eager"></span>
+              <span class="tile__cap"><b>story-lime</b><em>1080 × 1920</em></span>
+            </a>
+            <a class="tile" href="#case-avatar">
+              <span class="tile__img"><img src="images/avatar-orb.png" alt="Аватар: фиолетовая сфера" loading="eager"></span>
+              <span class="tile__cap"><b>avatar-orb</b><em>512 × 512</em></span>
+            </a>
+            <a class="tile" href="#case-og">
+              <span class="tile__img"><img src="images/og-night.png" alt="OG-превью: синий туман" loading="eager"></span>
+              <span class="tile__cap"><b>og-night</b><em>1200 × 630</em></span>
+            </a>
+            <a class="tile" href="#case-banner">
+              <span class="tile__img"><img src="images/banner-sunset.png" alt="Баннер: тёплый закат с планетой" loading="eager"></span>
+              <span class="tile__cap"><b>banner-sunset</b><em>1500 × 500</em></span>
+            </a>
+            <a class="tile" href="#case-product">
+              <span class="tile__img"><img src="images/product-mint.png" alt="Товар: мятная сфера" loading="eager"></span>
+              <span class="tile__cap"><b>product-mint</b><em>800 × 800</em></span>
+            </a>
+            <a class="tile" href="#case-email">
+              <span class="tile__img"><img src="images/email-violet.png" alt="Шапка письма: фиолетовые волны" loading="eager"></span>
+              <span class="tile__cap"><b>email-violet</b><em>1200 × 400</em></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section class="cases" id="cases">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="mono-label">01 — 08 / сценарии</p>
+            <h2>Каждой картинке — <br>свой носитель</h2>
+          </div>
+          <p class="section-head__note">Слева — макет, справа — что это за файл и где он пригодится. Клик по макету открывает чистый PNG без интерфейса.</p>
+        </div>
+
+        <div class="case-list">
+          <!-- 01 HERO -->
+          <article class="case" id="case-hero">
+            <div class="case__visual">
+              <div class="mock browser">
+                <div class="browser__bar">
+                  <span class="browser__lights"><i></i><i></i><i></i></span>
+                  <span class="browser__url">orb.studio</span>
+                  <span class="browser__spacer"></span>
+                </div>
+                <div class="browser__view">
+                  <img src="images/hero-aurora.png" alt="Hero-обложка на первом экране сайта" width="1600" height="900">
+                  <span class="browser__scrim"></span>
+                  <div class="site">
+                    <div class="site__nav">
+                      <span class="site__logo">orb®</span>
+                      <span class="site__links"><span>Продукт</span><span>Кейсы</span><span>Тарифы</span></span>
+                      <span class="site__navbtn">Начать</span>
+                    </div>
+                    <div class="site__body">
+                      <span class="site__eyebrow">generative covers</span>
+                      <h3 class="site__h">Графика,<br>собранная из кода</h3>
+                      <p class="site__p">Обложки для продукта, соцсетей и рассылок — за один запуск скрипта.</p>
+                      <span class="site__cta">Смотреть коллекцию <i>→</i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case__info">
+              <p class="case__num">01 / Hero</p>
+              <h3 class="case__title">Первый экран сайта</h3>
+              <p class="case__lead">Крупная абстракция задаёт настроение и не спорит с заголовком: тёмный левый край оставляет место тексту, свет справа держит взгляд.</p>
+              <ul class="tags"><li>Лендинг</li><li>Промо</li><li>Кейс</li><li>Презентация</li></ul>
+              <dl class="specs">
+                <div><dt>Размер</dt><dd>1600 × 900</dd></div>
+                <div><dt>Формат</dt><dd>PNG · sRGB</dd></div>
+                <div><dt>Вес</dt><dd>1,84 МБ</dd></div>
+                <div><dt>Сид</dt><dd>20260114</dd></div>
+              </dl>
+              <div class="palette"><span class="palette__label">Палитра</span>
+                <i class="swatch" style="background:#06081a" title="#06081a"></i>
+                <i class="swatch" style="background:#1a2c78" title="#1a2c78"></i>
+                <i class="swatch" style="background:#2de2e6" title="#2de2e6"></i>
+                <i class="swatch" style="background:#7b5cff" title="#7b5cff"></i>
+                <i class="swatch" style="background:#ff4ecd" title="#ff4ecd"></i>
+              </div>
+              <a class="case__link" href="images/hero-aurora.png" target="_blank" rel="noopener">Открыть hero-aurora.png <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- 02 POST -->
+          <article class="case case--flip" id="case-post">
+            <div class="case__visual">
+              <div class="mock post">
+                <div class="post__head">
+                  <img class="post__avatar" src="images/avatar-orb.png" alt="" width="32" height="32">
+                  <div class="post__who"><b>pulse.studio</b><span>Москва · сегодня</span></div>
+                  <span class="post__more">•••</span>
+                </div>
+                <div class="post__media">
+                  <img src="images/post-pulse.png" alt="Квадратный пост с коралловой сферой" width="1080" height="1080" loading="lazy">
+                  <div class="post__overlay"><span>выпуск 01</span>pulse</div>
+                </div>
+                <div class="post__icons" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9Z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.7A8 8 0 1 1 21 12Z"/></svg>
+                  <svg viewBox="0 0 24 24"><path d="m21 3-8 18-3.2-7.8L2 10l19-7Z"/></svg>
+                  <span class="post__save"><svg viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21V3Z"/></svg></span>
+                </div>
+                <p class="post__likes">1 284 отметки «Нравится»</p>
+                <p class="post__caption"><b>pulse.studio</b> Новый визуал: сфера, градиент и немного зерна. Сгенерировано кодом, без стоков.</p>
+              </div>
+            </div>
+            <div class="case__info">
+              <p class="case__num">02 / Social</p>
+              <h3 class="case__title">Пост в соцсетях</h3>
+              <p class="case__lead">Квадрат 1:1 с объектом в центре: не разваливается в ленте и выдерживает сжатие платформ. Подпись читается поверх затемнённого низа.</p>
+              <ul class="tags"><li>Instagram</li><li>VK</li><li>Telegram</li><li>Анонсы</li></ul>
+              <dl class="specs">
+                <div><dt>Размер</dt><dd>1080 × 1080</dd></div>
+                <div><dt>Формат</dt><dd>PNG · sRGB</dd></div>
+                <div><dt>Вес</dt><dd>1,61 МБ</dd></div>
+                <div><dt>Сид</dt><dd>777</dd></div>
+              </dl>
+              <div class="palette"><span class="palette__label">Палитра</span>
+                <i class="swatch" style="background:#16040f" title="#16040f"></i>
+                <i class="swatch" style="background:#5a1236" title="#5a1236"></i>
+                <i class="swatch" style="background:#ff6b6b" title="#ff6b6b"></i>
+                <i class="swatch" style="background:#ffb347" title="#ffb347"></i>
+                <i class="swatch" style="background:#ff2d78" title="#ff2d78"></i>
+              </div>
+              <a class="case__link" href="images/post-pulse.png" target="_blank" rel="noopener">Открыть post-pulse.png <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- 03 STORY -->
+          <article class="case" id="case-story">
+            <div class="case__visual case__visual--tall">
+              <div class="mock phone">
+                <div class="phone__screen">
+                  <img src="images/story-lime.png" alt="Вертикальная картинка в stories" width="1080" height="1920" loading="lazy">
+                  <span class="story__scrim"></span>
+                  <div class="story__prog"><i class="on"></i><i></i><i></i></div>
+                  <div class="story__head">
+                    <img src="images/favicon.png" alt="" width="26" height="26">
+                    <b>pulse.studio</b>
+                    <span class="story__time">2 ч</span>
+                  </div>
+                  <div class="story__body">
+                    <span class="story__eyebrow">new drop</span>
+                    <h3 class="story__title">новая<br>коллекция</h3>
+                    <p class="story__sub">уже в профиле</p>
+                    <span class="story__cta">Смотреть</span>
+                  </div>
+                  <div class="story__swipe">↑ свайп вверх</div>
+                </div>
+              </div>
+            </div>
+            <div class="case__info">
+              <p class="case__num">03 / Vertical</p>
+              <h3 class="case__title">Stories и Reels</h3>
+              <p class="case__lead">Вертикаль 9:16: тёмный верх оставляет место прогресс-бару и аватару, градиент уводит взгляд к кнопке внизу.</p>
+              <ul class="tags"><li>Stories</li><li>Reels</li><li>TikTok</li><li>Вертикальное видео</li></ul>
+              <dl class="specs">
+                <div><dt>Размер</dt><dd>1080 × 1920</dd></div>
+                <div><dt>Формат</dt><dd>PNG · sRGB</dd></div>
+                <div><dt>Вес</dt><dd>2,21 МБ</dd></div>
+                <div><dt>Сид</dt><dd>31415</dd></div>
+              </dl>
+              <div class="palette"><span class="palette__label">Палитра</span>
+                <i class="swatch" style="background:#04120c" title="#04120c"></i>
+                <i class="swatch" style="background:#0d3a26" title="#0d3a26"></i>
+                <i class="swatch" style="background:#b6ff5c" title="#b6ff5c"></i>
+                <i class="swatch" style="background:#21e6a8" title="#21e6a8"></i>
+                <i class="swatch" style="background:#eaffb0" title="#eaffb0"></i>
+              </div>
+              <a class="case__link" href="images/story-lime.png" target="_blank" rel="noopener">Открыть story-lime.png <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- 04 AVATAR -->
+          <article class="case case--flip" id="case-avatar">
+            <div class="case__visual">
+              <div class="mock profile">
+                <div class="profile__cover">
+                  <img src="images/avatar-orb.png" alt="" width="512" height="512" loading="lazy">
+                  <span class="profile__cover-scrim"></span>
+                </div>
+                <div class="profile__body">
+                  <div class="profile__head">
+                    <div class="avatar-xl"><img src="images/avatar-orb.png" alt="Сгенерированный аватар" width="96" height="96"></div>
+                    <div class="profile__id"><b>orb.maker</b><span>@orbmaker</span></div>
+                    <button class="mini-btn" type="button">Подписаться</button>
+                  </div>
+                  <p class="profile__bio">Генеративная графика. Пиксели из кода.</p>
+                  <div class="profile__stats">
+                    <span><b>128</b> постов</span>
+                    <span><b>12,4k</b> подписчиков</span>
+                    <span><b>184</b> подписки</span>
+                  </div>
+                  <div class="profile__thread">
+                    <div class="comment">
+                      <img class="av av--28" src="images/avatar-orb.png" alt="" width="28" height="28">
+                      <p><b>pulse.studio</b> Ставим на аватар — читается даже в 28 px</p>
+                      <span>2 м</span>
+                    </div>
+                    <div class="comment">
+                      <img class="av av--20" src="images/avatar-orb.png" alt="" width="20" height="20">
+                      <p><b>mint</b> И в уведомлениях норм</p>
+                      <span>5 м</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="case__info">
+              <p class="case__num">04 / Identity</p>
+              <h3 class="case__title">Аватар и иконка</h3>
+              <p class="case__lead">Сфера в центре переживает круглый кроп: остаётся узнаваемой и в профиле, и в комментариях на 20 px. Favicon собран из той же палитры.</p>
+              <ul class="tags"><li>Аватар</li><li>Favicon</li><li>Иконка приложения</li><li>Бейдж</li></ul>
+              <dl class="specs">
+                <div><dt>Размер</dt><dd>512 × 512</dd></div>
+                <div><dt>Формат</dt><dd>PNG + favicon 64</dd></div>
+                <div><dt>Вес</dt><dd>0,39 МБ</dd></div>
+                <div><dt>Сид</dt><dd>4242</dd></div>
+              </dl>
+              <div class="palette"><span class="palette__label">Палитра</span>
+                <i class="swatch" style="background:#08060f" title="#08060f"></i>
+                <i class="swatch" style="background:#231a52" title="#231a52"></i>
+                <i class="swatch" style="background:#b48cff" title="#b48cff"></i>
+                <i class="swatch" style="background:#6ce5ff" title="#6ce5ff"></i>
+                <i class="swatch" style="background:#ff9ae0" title="#ff9ae0"></i>
+              </div>
+              <a class="case__link" href="images/avatar-orb.png" target="_blank" rel="noopener">Открыть avatar-orb.png <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- 05 OG -->
+          <article class="case" id="case-og">
+            <div class="case__visual">
+              <div class="mock chat">
+                <div class="chat__bar">
+                  <span class="chat__peer"><img src="images/favicon.png" alt="" width="22" height="22"> orb.studio</span>
+                  <span class="chat__status">онлайн</span>
+                </div>
+                <div class="chat__body">
+                  <div class="bubble">
+                    <p>Скинул обложку для лендинга 👇</p>
+                    <a class="preview" href="images/og-night.png" target="_blank" rel="noopener">
+                      <img src="images/og-night.png" alt="OG-превью ссылки в мессенджере" width="1200" height="630" loading="lazy">
+                      <span class="preview__txt">
+                        <span class="preview__site">ORB.STUDIO</span>
+                        <span class="preview__title">Генеративная графика для продукта</span>
+                        <span class="preview__desc">8 обложек из кода — смотрите, где их использовать.</span>
+                      </span>
+                    </a>
+                    <span class="bubble__time">14:32</span>
+                  </div>
+                  <div class="bubble bubble--out">Выглядит дороже, чем есть <span class="bubble__time">14:33 ✓✓</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="case__info">
+              <p class="case__num">05 / Link preview</p>
+              <h3 class="case__title">OG-превью ссылки</h3>
+              <p class="case__lead">Горизонталь 1200 × 630 не обрезается в мессенджерах: слева остаётся воздух под заголовок, справа — акцент, который видно даже в маленькой карточке.</p>
+              <ul class="tags"><li>Telegram</li><li>Slack</li><li>X</li><li>Email-подпись</li></ul>
+              <dl class="specs">
+                <div><dt>Размер</dt><dd>1200 × 630</dd></div>
+                <div><dt>Формат</dt><dd>PNG · sRGB</dd></div>
+                <div><dt>Вес</dt><dd>0,95 МБ</dd></div>
+                <div><dt>Сид</dt><dd>2024</dd></div>
+              </dl>
+              <div class="palette"><span class="palette__label">Палитра</span>
+                <i class="swatch" style="background:#050c1a" title="#050c1a"></i>
+                <i class="swatch" style="background:#1b2d68" title="#1b2d68"></i>
+                <i class="swatch" style="background:#5ca8ff" title="#5ca8ff"></i>
+                <i class="swatch" style="background:#ff8a5c" title="#ff8a5c"></i>
+                <i class="swatch" style="background:#f2f5ff" title="#f2f5ff"></i>
+              </div>
+              <a class="case__link" href="images/og-night.png" target="_blank" rel="noopener">Открыть og-night.png <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- 06 BANNER -->
+          <article class="case case--flip" id="case-banner">
+            <div class="case__visual">
+              <div class="mock ad">
+                <img src="images/banner-sunset.png" alt="Широкий баннер с планетой" width="1500" height="500" loading="lazy">
+                <span class="ad__scrim"></span>
+                <div class="ad__content">
+                  <span class="ad__tag">осенний дроп</span>
+                  <h3 class="ad__title">−40%<br>на первый заказ</h3>
+                  <span class="ad__cta">Забрать промокод</span>
+                </div>
+                <span class="ad__size">1500 × 500</span>
+              </div>
+            </div>
+            <div class="case__info">
+              <p class="case__num">06 / Wide</p>
+              <h3 class="case__title">Рекламный баннер</h3>
+              <p class="case__lead">Широкий формат с планетой справа: текст и кнопка живут на спокойной тёмной части и не борются с картинкой.</p>
+              <ul class="tags"><li>Лидборд</li><li>Шапка канала</li><li>Обложка статьи</li></ul>
+              <dl class="specs">
+                <div><dt>Размер</dt><dd>1500 × 500</dd></div>
+                <div><dt>Формат</dt><dd>PNG · sRGB</dd></div>
+                <div><dt>Вес</dt><dd>0,97 МБ</dd></div>
+                <div><dt>Сид</dt><dd>555</dd></div>
+              </dl>
+              <div class="palette"><span class="palette__label">Палитра</span>
+                <i class="swatch" style="background:#160707" title="#160707"></i>
+                <i class="swatch" style="background:#4a1218" title="#4a1218"></i>
+                <i class="swatch" style="background:#ff9e4f" title="#ff9e4f"></i>
+                <i class="swatch" style="background:#ff4e6a" title="#ff4e6a"></i>
+                <i class="swatch" style="background:#ffd56b" title="#ffd56b"></i>
+              </div>
+              <a class="case__link" href="images/banner-sunset.png" target="_blank" rel="noopener">Открыть banner-sunset.png <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- 07 PRODUCT -->
+          <article class="case" id="case-product">
+            <div class="case__visual">
+              <div class="mock product">
+                <div class="product__media">
+                  <img src="images/product-mint.png" alt="Мятная сфера как фон карточки товара" width="800" height="800" loading="lazy">
+                  <span class="product__badge">new</span>
+                  <span class="product__heart" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-9a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 4.6-7 9-7 9Z"/></svg>
+                  </span>
+                </div>
+                <div class="product__body">
+                  <p class="product__meta">orb / светильники</p>
+                  <h3 class="product__name">Светильник Orb Mint</h3>
+                  <p class="rating"><span class="stars">★★★★★</span> 4,9 · 128 отзывов</p>
+                  <div class="price"><b>4 900 ₽</b><s>6 200 ₽</s><span class="price__badge">−21%</span></div>
+                  <button class="product__btn" type="button">В корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="case__info">
+              <p class="case__num">07 / Commerce</p>
+              <h3 class="case__title">Карточка товара</h3>
+              <p class="case__lead">Мягкий свет и объёмный объект работают как студийный фон — можно запускать карточку до фотосъёмки, а потом заменить сферу на продукт.</p>
+              <ul class="tags"><li>Маркетплейс</li><li>Каталог</li><li>Placeholder</li></ul>
+              <dl class="specs">
+                <div><dt>Размер</dt><dd>800 × 800</dd></div>
+                <div><dt>Формат</dt><dd>PNG · sRGB</dd></div>
+                <div><dt>Вес</dt><dd>0,86 МБ</dd></div>
+                <div><dt>Сид</dt><dd>9090</dd></div>
+              </dl>
+              <div class="palette"><span class="palette__label">Палитра</span>
+                <i class="swatch" style="background:#04120f" title="#04120f"></i>
+                <i class="swatch" style="background:#0c3a30" title="#0c3a30"></i>
+                <i class="swatch" style="background:#7cf6d2" title="#7cf6d2"></i>
+                <i class="swatch" style="background:#2bb3ff" title="#2bb3ff"></i>
+                <i class="swatch" style="background:#f5fffc" title="#f5fffc"></i>
+              </div>
+              <a class="case__link" href="images/product-mint.png" target="_blank" rel="noopener">Открыть product-mint.png <span>↗</span></a>
+            </div>
+          </article>
+
+          <!-- 08 EMAIL -->
+          <article class="case case--flip" id="case-email">
+            <div class="case__visual">
+              <div class="mock email">
+                <div class="email__bar">
+                  <span class="browser__lights"><i></i><i></i><i></i></span>
+                  <span>Входящие — orb.studio</span>
+                  <span class="email__bar-time">14:32</span>
+                </div>
+                <div class="email__subject">
+                  <h3>Новая коллекция уже здесь</h3>
+                  <p>orb.studio &lt;hello@orb.studio&gt; · кому: вам</p>
+                </div>
+                <div class="email__hero"><img src="images/email-violet.png" alt="Шапка email-рассылки" width="1200" height="400" loading="lazy"></div>
+                <div class="email__body">
+                  <p>Мы собрали восемь обложек из кода. Забирайте PNG и смотрите, как они работают в макетах.</p>
+                  <span class="email__btn">Смотреть коллекцию</span>
+                </div>
+                <div class="email__foot"><span>Отписаться</span><span>Веб-версия</span><span class="email__foot-right">orb.studio · 2026</span></div>
+              </div>
+            </div>
+            <div class="case__info">
+              <p class="case__num">08 / Email</p>
+              <h3 class="case__title">Шапка письма</h3>
+              <p class="case__lead">Невысокая обложка 3:1: тёмный низ держит контраст с текстом, волны добавляют движение, но не мешают читать.</p>
+              <ul class="tags"><li>Рассылка</li><li>Дайджест</li><li>Шапка блога</li></ul>
+              <dl class="specs">
+                <div><dt>Размер</dt><dd>1200 × 400</dd></div>
+                <div><dt>Формат</dt><dd>PNG · sRGB</dd></div>
+                <div><dt>Вес</dt><dd>0,61 МБ</dd></div>
+                <div><dt>Сид</dt><dd>123450</dd></div>
+              </dl>
+              <div class="palette"><span class="palette__label">Палитра</span>
+                <i class="swatch" style="background:#0a0718" title="#0a0718"></i>
+                <i class="swatch" style="background:#2a1a5c" title="#2a1a5c"></i>
+                <i class="swatch" style="background:#8e7cff" title="#8e7cff"></i>
+                <i class="swatch" style="background:#ff7ab6" title="#ff7ab6"></i>
+                <i class="swatch" style="background:#ffe8a3" title="#ffe8a3"></i>
+              </div>
+              <a class="case__link" href="images/email-violet.png" target="_blank" rel="noopener">Открыть email-violet.png <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILES -->
+    <section class="files-section" id="files">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="mono-label">Файлы / 9 шт · 9,4 МБ</p>
+            <h2>Забирайте всё <br>или по одному</h2>
+          </div>
+          <div class="section-head__aside">
+            <p class="section-head__note">PNG без потерь, sRGB. Все размеры кратны сеткам соцсетей, лендингов и рассылок.</p>
+            <a class="btn btn--primary" href="generated-images.zip" download>Скачать ZIP · 9,4 МБ</a>
+          </div>
+        </div>
+
+        <div class="files">
+          <div class="files__head">
+            <span>Файл</span><span>Размер</span><span>Вес</span><span>Палитра</span><span></span>
+          </div>
+
+          <a class="filerow" href="images/hero-aurora.png" download>
+            <span class="filerow__file"><img src="images/hero-aurora.png" alt="" width="48" height="48" loading="lazy"><span><b>hero-aurora.png</b><em>Hero-обложка</em></span></span>
+            <span class="mono">1600 × 900</span><span class="mono">1,84 МБ</span>
+            <span class="palette-inline"><i style="background:#2de2e6"></i><i style="background:#7b5cff"></i><i style="background:#ff4ecd"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+          <a class="filerow" href="images/post-pulse.png" download>
+            <span class="filerow__file"><img src="images/post-pulse.png" alt="" width="48" height="48" loading="lazy"><span><b>post-pulse.png</b><em>Пост 1:1</em></span></span>
+            <span class="mono">1080 × 1080</span><span class="mono">1,61 МБ</span>
+            <span class="palette-inline"><i style="background:#ff6b6b"></i><i style="background:#ffb347"></i><i style="background:#ff2d78"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+          <a class="filerow" href="images/story-lime.png" download>
+            <span class="filerow__file"><img src="images/story-lime.png" alt="" width="48" height="48" loading="lazy"><span><b>story-lime.png</b><em>Stories 9:16</em></span></span>
+            <span class="mono">1080 × 1920</span><span class="mono">2,21 МБ</span>
+            <span class="palette-inline"><i style="background:#b6ff5c"></i><i style="background:#21e6a8"></i><i style="background:#eaffb0"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+          <a class="filerow" href="images/avatar-orb.png" download>
+            <span class="filerow__file"><img src="images/avatar-orb.png" alt="" width="48" height="48" loading="lazy"><span><b>avatar-orb.png</b><em>Аватар</em></span></span>
+            <span class="mono">512 × 512</span><span class="mono">0,39 МБ</span>
+            <span class="palette-inline"><i style="background:#b48cff"></i><i style="background:#6ce5ff"></i><i style="background:#ff9ae0"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+          <a class="filerow" href="images/og-night.png" download>
+            <span class="filerow__file"><img src="images/og-night.png" alt="" width="48" height="48" loading="lazy"><span><b>og-night.png</b><em>OG-превью</em></span></span>
+            <span class="mono">1200 × 630</span><span class="mono">0,95 МБ</span>
+            <span class="palette-inline"><i style="background:#5ca8ff"></i><i style="background:#ff8a5c"></i><i style="background:#f2f5ff"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+          <a class="filerow" href="images/banner-sunset.png" download>
+            <span class="filerow__file"><img src="images/banner-sunset.png" alt="" width="48" height="48" loading="lazy"><span><b>banner-sunset.png</b><em>Баннер 3:1</em></span></span>
+            <span class="mono">1500 × 500</span><span class="mono">0,97 МБ</span>
+            <span class="palette-inline"><i style="background:#ff9e4f"></i><i style="background:#ff4e6a"></i><i style="background:#ffd56b"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+          <a class="filerow" href="images/product-mint.png" download>
+            <span class="filerow__file"><img src="images/product-mint.png" alt="" width="48" height="48" loading="lazy"><span><b>product-mint.png</b><em>Карточка товара</em></span></span>
+            <span class="mono">800 × 800</span><span class="mono">0,86 МБ</span>
+            <span class="palette-inline"><i style="background:#7cf6d2"></i><i style="background:#2bb3ff"></i><i style="background:#f5fffc"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+          <a class="filerow" href="images/email-violet.png" download>
+            <span class="filerow__file"><img src="images/email-violet.png" alt="" width="48" height="48" loading="lazy"><span><b>email-violet.png</b><em>Шапка письма</em></span></span>
+            <span class="mono">1200 × 400</span><span class="mono">0,61 МБ</span>
+            <span class="palette-inline"><i style="background:#8e7cff"></i><i style="background:#ff7ab6"></i><i style="background:#ffe8a3"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+          <a class="filerow" href="images/favicon.png" download>
+            <span class="filerow__file"><img src="images/favicon.png" alt="" width="48" height="48" loading="lazy"><span><b>favicon.png</b><em>Иконка 64 px</em></span></span>
+            <span class="mono">64 × 64</span><span class="mono">9,9 КБ</span>
+            <span class="palette-inline"><i style="background:#b48cff"></i><i style="background:#6ce5ff"></i><i style="background:#ff9ae0"></i></span>
+            <span class="filerow__dl">↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section class="how" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="mono-label">Как это сделано</p>
+            <h2>Ни одного стока. <br>Только математика.</h2>
+          </div>
+          <p class="section-head__note">Картинки рисует один Node-скрипт: градиенты, сферы и сетки считаются по пикселям, затем собираются в PNG собственным энкодером на zlib.</p>
+        </div>
+
+        <div class="how__grid">
+          <article class="how__card">
+            <span class="how__num">01</span>
+            <h3>Свой PNG-энкодер</h3>
+            <p>CRC32, чанки IHDR / IDAT / IEND и deflate из стандартной библиотеки. Ни одной npm-зависимости.</p>
+          </article>
+          <article class="how__card">
+            <span class="how__num">02</span>
+            <h3>Сид вместо случайности</h3>
+            <p>Каждая сцена воспроизводится по seed. Поменяйте число — получите другой вариант в той же палитре.</p>
+          </article>
+          <article class="how__card">
+            <span class="how__num">03</span>
+            <h3>Композиция под кроп</h3>
+            <p>Главный объект держится в центре или на безопасной стороне, поэтому 9:16, 1:1 и 3:1 не ломаются.</p>
+          </article>
+        </div>
+
+        <div class="codebox">
+          <div class="codebox__head">
+            <span class="codebox__dots"><i></i><i></i><i></i></span>
+            <span class="codebox__file">tools/generate.js</span>
+            <button class="codebox__copy" type="button" data-copy="node tools/generate.js">Скопировать</button>
+          </div>
+          <pre><code><span class="c-muted">$</span> node tools/generate.js
+
+<span class="c-muted"># 8 сцен → images/*.png + manifest.js</span>
+<span class="c-muted"># свой PNG-энкодер: zlib + CRC32</span>
+<span class="c-muted"># без npm, без стоков, без внешних сервисов</span></code></pre>
+          <a class="codebox__link" href="tools/generate.js" target="_blank" rel="noopener">Посмотреть исходник скрипта ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap site-foot__inner">
+      <div class="site-foot__brand">
+        <a class="brand" href="#top">
+          <img class="brand__mark" src="images/favicon.png" width="32" height="32" alt="">
+          <span class="brand__text">orb<span>.studio</span></span>
+        </a>
+        <p>Витрина сгенерированной графики. Все изображения созданы процедурно 14 ноября 2026 года; совпадения с брендами случайны.</p>
+      </div>
+      <div class="site-foot__links">
+        <a href="generated-images.zip" download>Скачать ZIP</a>
+        <a href="tools/generate.js" target="_blank" rel="noopener">Скрипт генерации</a>
+        <a href="#top">Наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр изображения" aria-hidden="true">
+    <button class="lightbox__close" type="button" aria-label="Закрыть просмотр">×</button>
+    <div class="lightbox__inner">
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox__bar">
+        <span id="lightbox-cap" class="mono"></span>
+        <a id="lightbox-link" href="#" target="_blank" rel="noopener">Открыть файл ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
